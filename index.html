@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    
+
+    <form class="formulario-contacto" id="formulario-contacto">
+
+        <p class="mensaje-leyenda">Contactate con INOVA y un asesor se pondrá en contacto a la brevedad</p>
+
+    
+        <div class="input-ingreso">
+            <input type="text" id="telefono" placeholder=" " >
+            <label for="telefono">Telefono</label>
+            <span class="mensaje-error" id="error-telefono"></span>
+        </div>
+
+        <div class="input-ingreso">
+            <input type="text" id="email" placeholder=" " >
+            <label for="email">Email</label>
+            <span class="mensaje-error" id="error-email"></span>
+        </div>
+
+        <div class="input-ingreso">
+            <input type="text" id="asunto" placeholder=" " >
+            <label for="asunto">Asunto</label>
+            <span class="mensaje-error" id="error-asunto"></span>
+        </div>
+        
+
+        <div class="input-ingreso">
+            <textarea id="mensaje" placeholder=" " ></textarea>
+            <label for="mensaje">Mensaje</label>
+            <span class="mensaje-error" id="error-mensaje"></span>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+
+        <div id="mensaje-enviado"></div>
+
+
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

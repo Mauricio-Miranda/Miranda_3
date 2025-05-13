@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #060b23;
+}
+
+.formulario-contacto {    
+    display: flex;
+    flex-direction: column;
+    align-items:center;    
+    gap: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;    
+}
+
+.input-ingreso{
+    position: relative;
+    margin-bottom: 9px; 
+}
+
+.input-ingreso input,
+.input-ingreso textarea{
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input-ingreso textarea {
+    height: 150px; 
+    padding-top: 15px; 
+}
+
+.input-ingreso label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 15px;
+    pointer-events: none;
+    transition: .3s;
+    background-color: #060b23; 
+    padding: 0 5px; 
+}
+
+.input-ingreso input:focus ~ label,
+.input-ingreso input:not(:placeholder-shown) ~ label,
+.input-ingreso textarea:focus ~ label,
+.input-ingreso textarea:not(:placeholder-shown) ~ label  {
+    top: 0;
+    left: 15px;
+    font-size: 13px;
+    padding: 0 2px;
+    background: #060b23;
+}
+
+.input-ingreso input.invalid,
+.input-ingreso textarea.invalid {
+    border: 2px solid red;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 11px;
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+}
+
+
+.btn-enviar {
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    background: #fff;
+    color: #060b23;
+    cursor: pointer;
+    transition: background .3s, color .3s;
+    outline: none;
+}
+
+.btn-enviar:hover {
+    background: #060b23;
+    color: #fff;
+}
+
+#mensaje-enviado {
+    margin-top: 10px;
+    color: green;
+    font-size: 16px;
+}
+
+.mensaje-leyenda {
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px; 
+}
+
+
+
+/* Estilos para dispositivos con un ancho máximo de 200px */
+@media (max-width: 200px) {
+    .formulario-contacto {
+        width: 90%;
+        max-width: 90%; 
+    }
+
+    .input-ingreso input,
+    .input-ingreso textarea,
+    .btn-enviar {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        width: 90%;
+        max-width: 90%; 
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 992px */
+@media (max-width: 992px) {
+    .formulario-contacto {
+        width: 90%;
+        max-width: 90%; 
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1200px */
+@media (max-width: 1200px) {
+    .formulario-contacto {
+        width: 90%;
+        max-width: 90%; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
